@@ -9,3 +9,12 @@ spring:
     properties.mail.smtp.port: 587
     from: 517309804@qq.com # 发送邮件的地址，和上面username一致
     default-encoding: UTF-8
+dubbo:
+  scan:
+    base-packages: com.lagou.service
+  protocol:
+    # dubbo
+    name: dubbo
+    port: 20880
+  registry:
+    address: spring-cloud://localhost
